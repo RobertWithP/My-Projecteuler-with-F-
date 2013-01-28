@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectEuler", "ProjectEuler\ProjectEuler.fsproj", "{5CD2248D-5AE4-427F-8062-7995E24F254F}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectEuler.Problems", "ProjectEuler.Problems\ProjectEuler.Problems.fsproj", "{4191C14D-C628-46D1-BDCB-1C4672F509C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD2248D-5AE4-427F-8062-7995E24F254F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD2248D-5AE4-427F-8062-7995E24F254F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD2248D-5AE4-427F-8062-7995E24F254F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD2248D-5AE4-427F-8062-7995E24F254F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4191C14D-C628-46D1-BDCB-1C4672F509C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4191C14D-C628-46D1-BDCB-1C4672F509C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4191C14D-C628-46D1-BDCB-1C4672F509C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4191C14D-C628-46D1-BDCB-1C4672F509C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
