@@ -15,11 +15,11 @@ let main argv =
 
     // change here problem
     let run =
-        ProjectEuler.Problems.Problem_1.info
-        let p = ProjectEuler.Problems.Problem_1.test       
+        ProjectEuler.Problems.Problem_2.info
+        let p = ProjectEuler.Problems.Problem_2.test       
         test (p)
             
-        let result = ProjectEuler.Problems.Problem_1.run
+        let result = ProjectEuler.Problems.Problem_2.run
         showresult (result.ToString())
 
     let read = System.Console.ReadLine()
