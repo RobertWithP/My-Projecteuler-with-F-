@@ -3,7 +3,7 @@ let main argv =
     
     let test (x:bool) = 
         if x = false then
-            let s = Printf.TextWriterFormat<unit>("\r\nError with test!\r\n")
+            let s = Printf.TextWriterFormat<unit>("\r\nTest FAILED!\r\n")
             printfn s
         else
             printfn "\r\nTest run successfully!\r\n"
