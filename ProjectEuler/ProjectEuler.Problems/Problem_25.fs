@@ -30,4 +30,5 @@ module Problem_25 =
     let info =
         printf "http://projecteuler.net/problem=25\r\n"
         printf "1000-digit Fibonacci number \r\n"
+        printf "Solved on 12.02.2013 \r\n"
 
