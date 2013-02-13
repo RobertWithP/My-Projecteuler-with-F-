@@ -12,12 +12,12 @@ module Problem_2 =
     let calculate max =           
         fibonacci max |> Seq.filter isEven |> Seq.sum
 
-    let run =
-        calculate 4000000
-
     let test =
         // 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 -> sum even is 44
         calculate 100 = 44
+
+    let run =
+        calculate 4000000
 
     let info =
         printf "http://projecteuler.net/problem=2\r\n"

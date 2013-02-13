@@ -11,21 +11,15 @@ module Problem_25 =
             else 
                 Some(bigint.Add(fst state, snd state), (snd state, bigint.Add(fst state , snd state)))) (1I,1I)          
    
-    let calculate max =    
-                 
-        let t = fibonacci max 
-        // todo: modify fibonacci to start with 0 and get 1 and 1 as first digits
-        let newt = Seq.append [| 1I; 1I |] t
-
-        Seq.length newt
-
-    let run =
-        calculate 1000
+    let calculate max =                     
+        fibonacci max |> fun x -> Seq.append [| 1I; 1I |] x |> Seq.length 
 
     let test =
         // 144 first first term with 3 digits
-        let r = calculate 3 
-        r = 12
+        calculate 3 = 12       
+
+    let run =
+        calculate 1000
 
     let info =
         printf "http://projecteuler.net/problem=25\r\n"

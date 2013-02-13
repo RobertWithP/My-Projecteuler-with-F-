@@ -8,13 +8,13 @@ module Problem_16 =
     let calculate (basis : bigint, exponent : int) : int =                
         digitsSum (bigint.Pow( basis, exponent) )
 
-    let run =
-        // todo: no string to char and int converison
-        calculate (2I, 1000)
-        
     let test =
         // 2 15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
         calculate ( 2I, 15 ) = 26
+
+    let run =
+        // todo: no string to char and int converison
+        calculate (2I, 1000)
 
     let info =
         printf "http://projecteuler.net/problem=16\r\n"

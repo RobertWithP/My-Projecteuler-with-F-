@@ -7,11 +7,11 @@ module Problem_1 =
     let calculate(below:int) =        
         [1..below - 1] |> List.filter isModulo |> List.sum
 
-    let run =
-        calculate 1000
-
     let test =
         calculate(10) = 23
+
+    let run =
+        calculate 1000
 
     let info =
         printf "http://projecteuler.net/problem=1\r\n"

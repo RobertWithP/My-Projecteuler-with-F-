@@ -41,11 +41,12 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problem_1.fs" />
-    <Compile Include="Problem_2.fs" />
-    <Compile Include="Problem_3.fs" />
-    <Compile Include="Problem_25.fs" />
-    <Compile Include="Problem_16.fs" />
+    <Compile Include="Problem_001.fs" />
+    <Compile Include="Problem_002.fs" />
+    <Compile Include="Problem_003.fs" />
+    <Compile Include="Problem_006.fs" />
+    <Compile Include="Problem_016.fs" />
+    <Compile Include="Problem_025.fs" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
