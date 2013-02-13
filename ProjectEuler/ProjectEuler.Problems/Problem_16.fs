@@ -2,12 +2,11 @@
 
 module Problem_16 =
 
-    let digitsList (result : bigint) =      
-        result.ToString().ToCharArray() |> Seq.map (fun dir -> System.Int32.Parse(dir.ToString()))
-
+    let digitsSum (result : bigint) =      
+        result.ToString().ToCharArray() |> Seq.map (fun dir -> System.Int32.Parse(dir.ToString())) |> Seq.sum
 
     let calculate (basis : bigint, exponent : int) : int =                
-        digitsList ( bigint.Pow( basis, exponent) ) |> Seq.sum
+        digitsSum (bigint.Pow( basis, exponent) )
 
     let run =
         // todo: no string to char and int converison
