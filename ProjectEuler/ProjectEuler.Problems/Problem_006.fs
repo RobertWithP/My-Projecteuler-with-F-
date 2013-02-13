@@ -24,3 +24,4 @@ module Problem_6 =
     let info =
         printf "http://projecteuler.net/problem=6\r\n"
         printf "Sum square difference \r\n"
+        printf "Solved on 13.02.2013 \r\n"

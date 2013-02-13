@@ -43,7 +43,7 @@
   <ItemGroup>
     <Compile Include="Problem_001.fs" />
     <Compile Include="Problem_002.fs" />
-    <Compile Include="Problem_003.fs" />
+    <Compile Include="Problem_005.fs" />
     <Compile Include="Problem_006.fs" />
     <Compile Include="Problem_016.fs" />
     <Compile Include="Problem_025.fs" />
