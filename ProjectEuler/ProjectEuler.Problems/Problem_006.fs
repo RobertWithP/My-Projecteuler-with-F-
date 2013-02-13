@@ -2,16 +2,24 @@
 
 module Problem_6 =
 
-    let calculate x = 
-        x
+    let numberList numbers  =
+        [1 .. numbers]
+
+    let sumOfSquares numbers : int =
+        numberList (numbers) |> List.map (fun x -> x * x) |> List.sum
+
+    let squareOfSum numbers : int = 
+        numberList (numbers) |> List.sum  |> fun x -> x * x        
+
+    let calculate numbers = 
+        squareOfSum ( numbers )  - sumOfSquares ( numbers )        
+
+    let test =
+        calculate ( 10 ) = 2640
 
     let run =
         // todo: no string to char and int converison
-        calculate ( 100 )
-        
-    let test =
-        // 2 15 = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
-        calculate ( 10 ) = 2640
+        calculate ( 100 )        
 
     let info =
         printf "http://projecteuler.net/problem=6\r\n"
