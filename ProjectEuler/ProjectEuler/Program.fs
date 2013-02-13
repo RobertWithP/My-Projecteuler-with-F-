@@ -15,10 +15,10 @@ let main argv =
 
     // change here problem
     let run =
-        ProjectEuler.Problems.Problem_5.info 
-        test (ProjectEuler.Problems.Problem_5.test)
+        ProjectEuler.Problems.Problem_13.info 
+        test (ProjectEuler.Problems.Problem_13.test)
             
-        let result = ProjectEuler.Problems.Problem_5.run
+        let result = ProjectEuler.Problems.Problem_13.run
         showresult (result.ToString())
 
     System.Console.ReadLine()
