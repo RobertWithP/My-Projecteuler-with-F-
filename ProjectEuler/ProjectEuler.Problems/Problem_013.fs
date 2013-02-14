@@ -16,8 +16,15 @@ module Problem_13 =
     let run =
         calculate
 
+    let GetSumOfSequenceAttempt1 max = 
+      seq { 1I .. max }
+
     let info =
         printf "http://projecteuler.net/problem=13\r\n"
         printf "Large sum \r\n"
         printf "Solved on 13.02.2013 \r\n"
+
+
+
+
 
