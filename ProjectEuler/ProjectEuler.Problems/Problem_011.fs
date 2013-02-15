@@ -5,10 +5,11 @@ open System.IO
 module Problem_11 =
 
     let productWithCount (line : int[] , count : int) : int[] =
-        [| 1; 2; 3 |]y
+        [| 1; 2; 3 |]
 
-    let readFile : int [][] = 
-        File.ReadAllLines ( "Problem_011.txt" ) |> Array.toList 
+//    let readFile : int [][] = 
+//        //File.ReadAllLines ( "Problem_011.txt" ) |> Array.toList 
+//        5
         
     let calculate =                
          5

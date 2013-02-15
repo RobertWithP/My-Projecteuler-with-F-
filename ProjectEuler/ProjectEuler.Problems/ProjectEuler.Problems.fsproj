@@ -40,6 +40,8 @@
     <Compile Include="Problem_002.fs" />
     <Compile Include="Problem_005.fs" />
     <Compile Include="Problem_006.fs" />
+    <Content Include="Problem_011.txt" />
+    <Compile Include="Problem_011.fs" />
     <None Include="Problem_013.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

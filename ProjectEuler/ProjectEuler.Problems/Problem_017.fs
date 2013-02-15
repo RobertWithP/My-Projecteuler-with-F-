@@ -18,10 +18,7 @@ module Problem_17 =
         | num when num < 20 -> c1to19 ( value )
         | _ -> c20to99 ( value )
 
-    let c101to199 value : string =
-        "One Hundred and " + c1to99 ( value % 100 )
-
-    let c200to999 value : string =
+    let c101to999 value : string =
         let hundred = c1to19 ( value / 100 )
         let word = hundred + " Hundred"
 
@@ -34,8 +31,7 @@ module Problem_17 =
         | 0 -> "Zero"
         | num when num < 100 -> c1to99 ( value )
         | 100 -> "One Hundred"
-        | num when num < 200 -> c101to199 ( value )
-        | num when num < 1000 -> c200to999 ( value )
+        | num when num < 1000 -> c101to999 ( value )
         | 1000 -> "One Thousand"
 
     let numberToWordDigitsCount value : int =
