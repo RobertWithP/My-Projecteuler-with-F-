@@ -30,7 +30,6 @@ module Problem_17 =
         match value with
         | 0 -> "Zero"
         | num when num < 100 -> c1to99 ( value )
-        | 100 -> "One Hundred"
         | num when num < 1000 -> c101to999 ( value )
         | 1000 -> "One Thousand"
 
