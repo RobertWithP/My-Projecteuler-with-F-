@@ -5,12 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4191c14d-c628-46d1-bdcb-1c4672f509c0</ProjectGuid>
+    <ProjectGuid>ec536d92-7149-401a-9b39-1c4cc84d42d0</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ProjectEuler.Problems</RootNamespace>
-    <AssemblyName>ProjectEuler.Problems</AssemblyName>
+    <RootNamespace>ProjectEuler.Algorithm</RootNamespace>
+    <AssemblyName>ProjectEuler.Algorithm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <Name>ProjectEuler.Problems</Name>
+    <Name>ProjectEuler.Algorithm</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,7 +20,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\ProjectEuler.Problems.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\ProjectEuler.Algorithm.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,27 +29,8 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\ProjectEuler.Problems.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\ProjectEuler.Algorithm.XML</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup>
-    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
-  </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
-  <ItemGroup>
-    <Compile Include="Problem_001.fs" />
-    <Compile Include="Problem_002.fs" />
-    <Compile Include="Problem_005.fs" />
-    <Compile Include="Problem_006.fs" />
-    <Content Include="Problem_011.txt" />
-    <None Include="Problem_013.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <Compile Include="Problem_013.fs" />
-    <Compile Include="Problem_016.fs" />
-    <Compile Include="Problem_017.fs" />
-    <Compile Include="Problem_019.fs" />
-    <Compile Include="Problem_025.fs" />
-  </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -59,13 +40,10 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProjectEuler.Algorithm\ProjectEuler.Algorithm.fsproj">
-      <Name>ProjectEuler.Algorithm</Name>
-      <Project>{ec536d92-7149-401a-9b39-1c4cc84d42d0}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
+  <PropertyGroup>
+    <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
