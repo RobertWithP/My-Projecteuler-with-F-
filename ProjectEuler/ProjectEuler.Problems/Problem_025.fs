@@ -15,7 +15,7 @@ module Problem_25 =
         fibonacci max |> fun x -> Seq.append [| 1I; 1I |] x |> Seq.length 
 
     let test =
-        // 144 first first term with 3 digits, 12 Position -> 1 1 2 3 5 8 13 21 34 55 89 144
+        // 144 first term with 3 digits, 12 Position -> 1 1 2 3 5 8 13 21 34 55 89 144
         calculate 3 = 12       
 
     let run =

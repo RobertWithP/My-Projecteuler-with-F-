@@ -39,7 +39,6 @@
     <Compile Include="Problem_001.fs" />
     <Compile Include="Problem_002.fs" />
     <Compile Include="Problem_005.fs" />
-    <Compile Include="Problem_006.fs" />
     <Content Include="Problem_011.txt" />
     <None Include="Problem_013.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -49,6 +48,8 @@
     <Compile Include="Problem_017.fs" />
     <Compile Include="Problem_019.fs" />
     <Compile Include="Problem_025.fs" />
+    <Compile Include="Problem_006.fs" />
+    <Compile Include="Problem_010.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
