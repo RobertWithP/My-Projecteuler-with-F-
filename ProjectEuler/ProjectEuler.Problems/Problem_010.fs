@@ -6,16 +6,14 @@ open ProjectEuler.Algorithm
 module Problem_10 =   
 
     let test =
-        let t = Prime.sieve ( 10 ) 
-        t = 17L
+        let t = Prime.SumPrimes ( 10 ) 
+        t = 17I
 
     let run =
-
         //refactor c# -> under 50ms
-
 //        let sw = System.Diagnostics.Stopwatch()
 //        sw.Start()
-        let result = Prime.sieve ( 2000000 )    
+        let result = Prime.SumPrimes ( 2000000 )    
 //        sw.Stop()
 //        printfn "%f" sw.Elapsed.TotalMilliseconds
     

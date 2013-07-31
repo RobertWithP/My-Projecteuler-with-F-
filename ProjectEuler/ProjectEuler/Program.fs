@@ -10,8 +10,7 @@ let main argv =
 
     let showresult (result:string) =
         let s = Printf.TextWriterFormat<string -> unit>("Result:\r\n%s\r\n")
-        printfn s result
-
+        printfn s result  
 
     // change here problem
     let run =
