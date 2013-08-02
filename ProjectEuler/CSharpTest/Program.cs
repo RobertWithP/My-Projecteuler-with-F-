@@ -8,9 +8,66 @@ namespace CSharpTest
 {
 	using System.Diagnostics;
 
-	class Program
+	internal class Program
 	{
-		static void Main(string[] args)
+		private static void Main(string[] args)
+		{		
+			PrimeFactorTest();
+
+			Console.ReadLine();
+		}
+
+		private static void PrimeFactorTest()
+		{		
+			var sw = Stopwatch.StartNew();
+			
+			var result2 = prime(600851475143);
+
+			sw.Stop();
+			Console.WriteLine(sw.ElapsedMilliseconds + " in ms");
+
+			result2.ForEach(Console.WriteLine);
+		}
+
+		//http://www.hsg-kl.de/faecher/inf/algorithmus/standard/primfak/index.php
+		private static List<int> prime(Int64 n)
+		{
+			var primeList = new List<int>();
+
+			while ((n % 2) == 0)
+			{
+				primeList.Add(2);
+				n = n / 2;
+			}
+
+			while ((n % 3) == 0)
+			{
+				primeList.Add(3);
+				n = n / 3;
+			}
+
+			var t = 5;
+			var dif = 2;
+
+			while ((t * t) <= n)
+			{
+				while ((n % t) == 0)
+				{
+					primeList.Add(t);
+					n = n / t;
+				}
+
+				t = t + dif;
+				dif = 6 - dif;
+			}
+
+			if(n > 1)
+				primeList.Add(Convert.ToInt32(n));
+
+			return primeList;
+		}
+
+		private static void SieveTest()
 		{
 			Console.WriteLine(Sieve(10) == 17 ? "Correct" : "Failed");
 
@@ -25,8 +82,6 @@ namespace CSharpTest
 
 			sw.Stop();
 			Console.WriteLine(sw.ElapsedMilliseconds + " in ms");
-
-			Console.ReadLine();
 		}
 
 		private static long Sieve(int p)

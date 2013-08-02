@@ -17,8 +17,10 @@ module Prime =
                     multiple (i * 2) max i |> Seq.iter (fun x -> to_check.[x] <- true)                   
                     primes.[i] <- bigint i
 
-            primes // |> Array.filter (fun x -> x > 0I) 
+            primes
 
     let SumPrimes max = 
         Array.sum ( SieveOfEratosthenes.sieve max )        
         
+    let Primes max =
+        SieveOfEratosthenes.sieve max |> Array.filter (fun v -> v > 0I)
